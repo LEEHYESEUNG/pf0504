@@ -28,7 +28,7 @@
     z-index: 10;
     &.active{
         height: 0;
-        transition: 0.5s;
+         transition: 0.3s ease-in;
     }
     .circle{
         position: relative;
