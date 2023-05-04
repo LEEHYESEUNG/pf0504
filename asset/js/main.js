@@ -21,6 +21,11 @@ $(function(){
     e.preventDefault();
 
    $('.intro').addClass('active');
+    
+    text.innerHTML = text.innerText.split("").map(
+      (char, i) => 
+      `<span style="display:none">${char}</span>`
+    ).join("")
   });
   
 
