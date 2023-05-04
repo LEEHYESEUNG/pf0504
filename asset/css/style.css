@@ -127,7 +127,8 @@ body {
 }
 .intro.active {
   height: 0;
-  transition: 0.5s;
+  transition: 0.3s ease-out;
+  z-index: -1;
 }
 .intro.active.circle {
   display: none;
