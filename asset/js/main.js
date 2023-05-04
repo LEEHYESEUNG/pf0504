@@ -4,6 +4,25 @@ $(function(){
     document.location.reload();
   };
 
+ /**
+ * 
+ *  intro
+ */
+
+//  text 객체로 나누기
+   const text = document.querySelector('.intro .text');
+   text.innerHTML = text.innerText.split("").map(
+    (char, i) => 
+    `<span style="transform:rotate(${i * 8.5}deg)">${char}</span>`
+   ).join("")
+
+  // bg
+  $('.intro .circle').click(function(e){
+    e.preventDefault();
+
+   $('.intro').addClass('active');
+  });
+  
 
   /**
  * 
