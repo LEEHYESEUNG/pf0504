@@ -1,0 +1,148 @@
+@keyframes arrowtop {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(-50%) translateY(-30%) rotate(45deg);
+        opacity: 1;
+    }
+}
+
+footer{
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 30px 20px;
+    position: relative;
+}
+.contact-area{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    font-size: clamp(70px, 11vw, 130px);
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    .contact-item{
+        display: inline-block;
+        width: fit-content;
+        position: relative;
+        color: #111;
+        text-shadow: -1px 0px #fff, 0px 1px #fff, 1px 0px #0fff, 0px -1px #fff;
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            bottom: 18px;
+            left: 103%;
+            background: url(/asset/img/up-right-arrow.png) no-repeat center center;
+            background-size: cover;
+            transition: 0.5s 0.2s;
+            transform-origin: 0% 100%;
+            filter: invert(1);
+        }
+        &::before{
+            position: absolute;
+            content: attr(data-text);
+            display: block;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: #fff;
+            overflow: hidden;
+            white-space: nowrap;
+            transition: 0.5s;
+        }
+    }
+}
+.goal{
+    width: 40%;
+    color: #fff;
+    align-self: center;
+    font-size: 28px;
+    line-height: 1.5em;
+    word-break: keep-all;
+    text-align: center;
+    font-family: 'Do Hyeon',serif;
+    span{
+        color: #14D990;
+    }
+}
+aside{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    .top_btn{
+        display: block;
+        padding-top: 50px;
+        height: 100%;
+        color: #fff;
+        position: relative;
+        font-size: 16px;
+        font-family: 'GmarketSansMedium';
+        letter-spacing: -0.05em;
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            border-top: 1px solid #fff;
+            border-left: 1px solid #fff;
+            transform: translateX(-50%) rotate(45deg);
+            animation: arrowtop 1.5s 0.3s ease infinite ;
+        }
+    }
+}
+
+
+@media (hover:hover) and (pointer: fine) {
+    .contact-area{
+        .contact-item{
+            &:hover{
+                &::before{
+                    width: 100%;
+                }
+                &::after{
+                    transform: scale(1.8);
+                }
+            }
+        }
+    }
+}
+
+//  반응형
+@media (max-width: 768px){
+    footer { 
+        height: auto;
+        display: block;
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
+    .goal{
+        width: 100%;
+        padding-top: 0;
+    }
+    .contact-area{
+        width: 100%;
+        padding-top: 50px;
+        .contact-item{
+            &::after{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                bottom: 10px;
+                left: 103%;
+            }
+        }
+    }
+}

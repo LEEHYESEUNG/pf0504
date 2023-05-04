@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html use="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leehyeseung</title>
+
+    <link rel="stylesheet" href="./asset/css/style.css">
+    
+    <script src="./asset/js/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="./asset/js/isotope.pkgd.min.js"></script>
+    <script src="./asset/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="intro">
+
+        </div>
+        <div class="header-inner">
+            <h1 class="title">hyeseung</h1>
+            <div class="contact-box">
+                <a href="https://www.notion.so/f1dbd5217475406b99141f6e7cf340fb?pvs=4" target="_blank" class="link-item notion">
+                    <img src="./asset/img/icons8-notion-50.png" alt="노션">
+                </a>
+                <a href="tel:010905954407" class="link-item call">
+                    <img src="./asset/img/smartphone.png" alt="전화">
+                </a>
+                <a href="mailto:leehs4460@gmail.com" class="link-item email">
+                    <img src="./asset/img/mail.png" alt="전화">
+                </a>
+            </div>
+            <span class="text">contact me!</span>
+        </div>
+    </header>
+    <main>
+        <div class="scroll-box">
+            <span class="text">Scroll</span>
+        </div>
+        <section class="profile">
+            <p class="title">I'm <span class="point">a responsible</span> <br />Markeup Develoer</p>
+        </section>
+        <section class="main-area">
+            <div class="introduce">
+                <div class="title-box">
+                    <em class="title">About Me</em>
+                    <span class="tag">#성실한 #책임감있는</span>
+                    <span class="tag"> #도전적인 #활발한 #꼼꼼한</span>
+                </div>
+                <p class="desc">
+                    웹 표준을 준수하고 웹 접근성을 위해 시멘틱 태그를 사용하였습니다. 장애인, 비장애인 누구나 차별없이 사용할 수 있는 웹페이지를 지향하며, 보기 깔끔한 <span>정돈된 마크업</span>과 CSS와 다양한 JavaScript를 사용해 <span>생동감</span>을 불어넣어 눈이 즐거운 웹페이지를 만들겠습니다. 
+                </p>
+            </div>
+            <div class="portfolio">
+                <div class="sc-title">
+                    <span class="text">portfolio</span>
+                </div>
+                <div class="nav">
+                    <button type="button" class="tab active" data-filter="*">전체</button>
+                    <button type="button" class="tab" data-filter=".responsive">반응형</button>
+                    <button type="button" class="tab" data-filter=".adaptive">적응형</button>
+                    <button type="button" class="tab" data-filter=".renewal">리뉴얼</button>
+                </div>
+                <div class="item-area">
+                    <div class="item responsive">
+                        <div class="img-area">
+                            <img src="./asset/img/arm-all-Devices2.jpg" alt="armadillo">
+                        </div>
+                        <div class="desc-box">
+                            <div class="text-box">
+                                <span class="name">ARMADILLO</span>
+                                <p class="item-desc">반응형</p>
+                                <div class="skills-box">
+                                    <div class="skill-icon">
+                                        <span class="skill"><img src="./asset/img/html.png" alt="html"></span>
+                                        <span class="skill"><img src="./asset/img/css.png" alt="css"></span>
+                                        <span class="skill"><img src="./asset/img/java.png" alt="javascript"></span>
+                                    </div>
+                                    <div class="skill-text">
+                                        <span class="skill">+ SWIPER</span>
+                                        <span class="skill">+ GSAP</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-box">
+                                <a href="" target="_blank" class="link-web">view site</a>
+                                <a href="https://www.notion.so/armadillo-bc6d86c0201a451fa6d735466627d56e?pvs=4" target="_blank" class="link-code">view code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item responsive renewal">
+                        <div class="img-area">
+                            <img src="./asset/img/gom-all-Devices2.jpg" alt="곰표">
+                        </div>
+                        <div class="desc-box">
+                            <div class="text-box">
+                                <span class="name">곰표</span>
+                                <p class="item-desc">반응형(리뉴얼)</p>
+                                <div class="skills-box">
+                                    <div class="skill-icon">
+                                        <span class="skill"><img src="./asset/img/html.png" alt="html"></span>
+                                        <span class="skill"><img src="./asset/img/css.png" alt="css"></span>
+                                        <span class="skill"><img src="./asset/img/java.png" alt="javascript"></span>
+                                    </div>
+                                    <div class="skill-text">
+                                        <span class="skill">+ SWIPER</span>
+                                        <span class="skill">+ GSAP</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-box">
+                                <a href="" target="_blank" class="link-web">view site</a>
+                                <a href="https://www.notion.so/26967447a9914b6898d4c67ad31bf544?pvs=4" target="_blank" class="link-code">view code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item adaptive">
+                        <div class="img-area">
+                            <img src="./asset/img/shop.jpg" alt="네이버쇼핑">
+                        </div>
+                        <div class="desc-box">
+                            <div class="text-box">
+                                <span class="name">네이버쇼핑</span>
+                                <p class="item-desc">적응형(MOBILE)</p>
+                                <div class="skills-box">
+                                    <div class="skill-icon">
+                                        <span class="skill"><img src="./asset/img/html.png" alt="html"></span>
+                                        <span class="skill"><img src="./asset/img/css.png" alt="css"></span>
+                                        <span class="skill"><img src="./asset/img/java.png" alt="javascript"></span>
+                                    </div>
+                                    <div class="skill-text">
+                                        <span class="skill">+ SWIPER</span>
+                                        <span class="skill">+ JSON</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-box">
+                                <a href="" target="_blank" class="link-web">view site</a>
+                                <a href="https://www.notion.so/53601b8d81354f3d85e5b7ab501aa0a5?pvs=4" target="_blank" class="link-code">view code</a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="item responsive">
+                        <div class="img-area">
+                            <img src="./asset/img/all_device_career.jpg" alt="네이버커리어">
+                        </div>
+                        <div class="desc-box">
+                            <div class="text-box">
+                                <span class="name">네이버커리어</span>
+                                <p class="item-desc">반응형</p>
+                                <div class="skills-box">
+                                    <div class="skill-icon">
+                                        <span class="skill"><img src="./asset/img/html.png" alt="html"></span>
+                                        <span class="skill"><img src="./asset/img/css.png" alt="css"></span>
+                                        <span class="skill"><img src="./asset/img/java.png" alt="javascript"></span>
+                                    </div>
+                                    <div class="skill-text">
+                                        <span class="skill">+ SWIPER</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-box">
+                                <a href="" target="_blank" class="link-web">view site</a>
+                                <a href="https://www.notion.so/325d57eec81d45b18f80503a7e8cf9f0?pvs=4" target="_blank" class="link-code">view code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item adaptive">
+                        <div class="img-area">
+                            <img src="./asset/img/andar_mobile.jpg" alt="안다르">
+                        </div>
+                        <div class="desc-box">
+                            <div class="text-box">
+                                <span class="name">ANDAR</span>
+                                <p class="item-desc">적응형(MOBILE)</p>
+                                <div class="skills-box">
+                                    <div class="skill-icon">
+                                        <span class="skill"><img src="./asset/img/html.png" alt="html"></span>
+                                        <span class="skill"><img src="./asset/img/css.png" alt="css"></span>
+                                        <span class="skill"><img src="./asset/img/java.png" alt="javascript"></span>
+                                    </div>
+                                    <div class="skill-text">
+                                        <span class="skill">+ SWIPER</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-box">
+                                <a href="" target="_blank" class="link-web">view site</a>
+                                <a href="https://www.notion.so/8715dc56927a49a4817b4555fa5243f3?pvs=4" target="_blank" class="link-code">view code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item responsive renewal">
+                        <div class="img-area">
+                            <img src="./asset/img/gensler.jpg" alt="젠슬러">
+                        </div>
+                        <div class="desc-box">
+                            <div class="text-box">
+                                <span class="name">GENSLER</span>
+                                <p class="item-desc">반응형(PC&MOBILE,리뉴얼)</p>
+                                <div class="skills-box">
+                                    <div class="skill-icon">
+                                        <span class="skill"><img src="./asset/img/html.png" alt="html"></span>
+                                        <span class="skill"><img src="./asset/img/css.png" alt="css"></span>
+                                        <span class="skill"><img src="./asset/img/java.png" alt="javascript"></span>
+                                    </div>
+                                    <div class="skill-text">
+                                        <span class="skill">+ JS 플러그인</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-box">
+                                <a href="" target="_blank" class="link-web">view site</a>
+                                <a href="https://www.notion.so/GENSLER-sub-page-743272d7cfb64e4a96b531994220586e?pvs=4" target="_blank" class="link-code">view code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item adaptive">
+                        <div class="img-area">
+                            <img src="./asset/img/seoul_desktop.jpg" alt="서울시청">
+                        </div>
+                        <div class="desc-box">
+                            <div class="text-box">
+                                <span class="name">서울시청</span>
+                                <p class="item-desc">적응형(PC)</p>
+                                <div class="skills-box">
+                                    <div class="skill-icon">
+                                        <span class="skill"><img src="./asset/img/html.png" alt="html"></span>
+                                        <span class="skill"><img src="./asset/img/css.png" alt="css"></span>
+                                        <span class="skill"><img src="./asset/img/java.png" alt="javascript"></span>
+                                    </div>
+                                    <div class="skill-text">
+                                        <span class="skill">+ SWIPER</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-box">
+                                <a href="" target="_blank" class="link-web">view site</a>
+                                <a href="https://www.notion.so/c7b3c4b2de7f42d8bfbe1f09a9dbf6a1?pvs=4" target="_blank" class="link-code">view code</a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="item adaptive">
+                        <div class="img-area">
+                            <img src="./asset/img/seoul_desktop.jpg" alt="네이버">
+                        </div>
+                        <div class="desc-box">
+                            <div class="text-box">
+                                <span class="name">NAVER</span>
+                                <p class="item-desc">적응형(PC)</p>
+                                <div class="skills-box">
+                                    <div class="skill-icon">
+                                        <span class="skill"><img src="./asset/img/html.png" alt="html"></span>
+                                        <span class="skill"><img src="./asset/img/css.png" alt="css"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-box">
+                                <a href="" target="_blank" class="link-web">view site</a>
+                                <a href="https://www.notion.so/267e1c3f6dab4555a6977241980c4d89?pvs=4" target="_blank" class="link-code">view code</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="goal">즉각적으로 결과물을 확인하고 하나의 정답이 아닌 다양한 방법을 찾아 프로젝트를 완성하는 것에 큰 흥미를 느껴 퍼블리셔에 도전하게 되었습니다.<br />항상 다짐하는 <span>“새로운 것을 두려워하지 않는 마음가짐”</span>으로 변화하는 환경에 발맞춰 다양한 기술을 배우고 성장해나가도록 노력하겠습니다.</p>
+        <div class="contact-area">
+            <a href="mailto:leehs4460@gmail.com" data-text="email" class="contact-item">email</a>
+            <a href="tel:010905954407" data-text="phone" class="contact-item">phone</a>
+            <a href="https://www.notion.so/f1dbd5217475406b99141f6e7cf340fb?pvs=4" target="_blank" data-text="notion" class="contact-item">notion</a>
+        </div>
+        <aside class="gototop">
+            <a href="#" class="top_btn">Back To the Top</a>
+        </aside>
+    </footer>
+</body>
+</html>
