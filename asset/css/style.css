@@ -129,6 +129,9 @@ body {
   height: 0;
   transition: 0.5s;
 }
+.intro.active.circle {
+  display: none;
+}
 .intro .circle {
   position: relative;
   top: 50%;
