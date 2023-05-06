@@ -124,14 +124,10 @@ body {
   height: 100%;
   background: #fff;
   z-index: 10;
+  transition: 0.3s linear;
 }
 .intro.active {
-  height: 0;
-  transition: 0.3s ease-out;
-  z-index: -1;
-}
-.intro.active.circle {
-  display: none;
+  top: -100%;
 }
 .intro .circle {
   position: relative;
