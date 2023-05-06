@@ -26,12 +26,9 @@
     height: 100%;
     background: #fff;
     z-index: 10;
+    transition: 0.3s linear;
     &.active{
-        height: 0;
-        transition: 0.3s ease-in;
-        &.circle{
-         display: none;
-        }
+        top: -100%;
     }
     .circle{
         position: relative;
